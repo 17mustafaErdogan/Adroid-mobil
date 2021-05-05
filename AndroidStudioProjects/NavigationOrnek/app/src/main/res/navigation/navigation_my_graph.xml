@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_my_graph"
+    app:startDestination="@id/birinciFragment">
+
+    <fragment
+        android:id="@+id/birinciFragment"
+        android:name="com.example.navigationornek.BirinciFragment"
+        android:label="fragment_birinci"
+        tools:layout="@layout/fragment_birinci" >
+        <action
+            android:id="@+id/action_birinciFragment_to_ikiciFragment"
+            app:destination="@id/ikiciFragment"
+            app:enterAnim="@anim/fragment_fade_enter" />
+    </fragment>
+    <fragment
+        android:id="@+id/ikiciFragment"
+        android:name="com.example.navigationornek.ikiciFragment"
+        android:label="fragment_ikici"
+        tools:layout="@layout/fragment_ikici" >
+        <action
+            android:id="@+id/action_ikiciFragment_to_birinciFragment"
+            app:destination="@id/birinciFragment"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <argument
+            android:name="birSey"
+            app:argType="string"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

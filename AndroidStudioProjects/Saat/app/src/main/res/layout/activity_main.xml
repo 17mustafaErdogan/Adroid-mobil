@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333131"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FF0000"
+        android:gravity="center"
+        android:text="Tarih"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#0000FF"
+        android:gravity="center"
+        android:text="Zaman"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/textViewKronometre"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#00FF00"
+        android:gravity="center"
+        android:text="Kronometre"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="kronometreBaşlat"
+        android:text="Başlat"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="kronometreDurdur"
+        android:text="Durdur"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Zamanı belirleyin (sn)"
+        android:inputType="time"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#5A5252"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="countDown"
+        android:text="Geri Sayıma başla"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewZamanlaıyıcı"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FF6D00"
+        android:gravity="center"
+        android:text="Zamanlayıcı"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp" />
+
+
+
+
+</LinearLayout>

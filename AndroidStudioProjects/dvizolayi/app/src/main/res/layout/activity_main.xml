@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="107dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="27dp"
+        android:onClick="Eur"
+        android:text="euroya göre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="107dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:onClick="TrL"
+        android:text="türk lirasına göre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="107dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="17dp"
+        android:onClick="Usd"
+        android:text="dolara göre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="107dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="17dp"
+        android:onClick="Btc"
+        android:text="bitcoine göre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/cadId"
+        android:layout_width="184dp"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="#9C27B0"
+        android:textColorHighlight="#009688"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/cadid2" />
+
+    <TextView
+        android:id="@+id/usdId"
+        android:layout_width="184dp"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="#9C27B0"
+        android:textColorHighlight="#009688"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/usdId2" />
+
+    <TextView
+        android:id="@+id/btcId2"
+        android:layout_width="184dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="BTC"
+        android:textAllCaps="true"
+        android:textColor="#9C27B0"
+        android:textColorHighlight="#009688"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/cadId" />
+
+    <TextView
+        android:id="@+id/eurId2"
+        android:layout_width="184dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="EUR"
+        android:textAllCaps="true"
+        android:textColor="#9C27B0"
+        android:textColorHighlight="#009688"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/btcId" />
+
+    <TextView
+        android:id="@+id/tryId"
+        android:layout_width="184dp"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="#9C27B0"
+        android:textColorHighlight="#009688"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/tryId2" />
+
+    <TextView
+        android:id="@+id/cadid2"
+        android:layout_width="184dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="CAD"
+        android:textAllCaps="true"
+        android:textColor="#9C27B0"
+        android:textColorHighlight="#009688"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btcId"
+        android:layout_width="184dp"
+        android:layout_height="63dp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="#9C27B0"
+        android:textColorHighlight="#009688"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/btcId2" />
+
+    <TextView
+        android:id="@+id/eurId"
+        android:layout_width="184dp"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="#9C27B0"
+        android:textColorHighlight="#009688"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/eurId2" />
+
+    <TextView
+        android:id="@+id/tryId2"
+        android:layout_width="184dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="TRY"
+        android:textAllCaps="true"
+        android:textColor="#9C27B0"
+        android:textColorHighlight="#009688"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/usdId" />
+
+    <TextView
+        android:id="@+id/usdId2"
+        android:layout_width="184dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="USD"
+        android:textAllCaps="true"
+        android:textColor="#9C27B0"
+        android:textColorHighlight="#009688"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/eurId" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="107dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:onClick="Cad"
+        android:text="kanda dolarına göre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

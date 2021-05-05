@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='basit veri saklama'
