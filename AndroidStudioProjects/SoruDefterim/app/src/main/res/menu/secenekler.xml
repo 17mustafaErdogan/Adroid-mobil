@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item android:id="@+id/outId" android:title="ÇIKIŞ"></item>
-<item android:id="@+id/soruId" android:title="SORU EKLE"></item>
-    <item android:title="kamere" android:id="@+id/kamera"></item>
-</menu>
